@@ -64,7 +64,7 @@ def search_videos():
 
 @app.route('/sorted-vidoes')
 def sorted_videos():
-  sorted_videos = merge_sort(videos) 
-  return [vid for vid in sorted_videos]
+    sorted_videos = merge_sort(videos) 
+    return [vid for vid in sorted_videos]
 
 if __name__ == '__main__': app.run(debug=True)
